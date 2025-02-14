@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";  // ✅ Use HashRouter instead of BrowserRouter
 import App from "./App";
-import "./index.css"; // ✅ Ensure this file exists in `src/`
+import "./index.css";  // ✅ Ensure this file exists in `src/`
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/MBTIramen">
+    <HashRouter>  {/* ✅ HashRouter fixes GitHub Pages 404 issue */}
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
