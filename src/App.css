@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+/* Global Styles */
+body {
+  font-family: "Itim", cursive;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Button Styling */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* General Layout */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
